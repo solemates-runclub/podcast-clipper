@@ -1,0 +1,35 @@
+<title>Podcast Clipper — Source</title>
+<link rel="stylesheet" href="/styles.css" />
+
+<header>
+  <h1>Podcast Clipper</h1>
+  <nav>
+    <a href="/">Sources</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card" id="source-header">Loading...</div>
+
+  <div class="card" id="generate-panel">
+    <div class="row">
+      <label class="dim">Number of clips
+        <input id="clip-count" type="number" min="1" max="50" value="10" style="width:70px;" />
+      </label>
+      <label class="dim">Duration (seconds)
+        <input id="clip-duration" type="number" min="5" max="300" value="45" style="width:80px;" />
+      </label>
+      <button id="generate-btn">Generate clips</button>
+    </div>
+    <div id="generate-error" class="dim" style="color: var(--danger); display:none;"></div>
+  </div>
+
+  <div class="card row between" id="download-all-panel" style="display:none;">
+    <span class="dim" id="download-all-count"></span>
+    <a id="download-all-link" href="#"><button type="button">Download all clips</button></a>
+  </div>
+
+  <div id="clips-list"></div>
+</main>
+
+<script src="/source.js"></script>

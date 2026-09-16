@@ -1,0 +1,17 @@
+{
+  "name": "podcast-clipper",
+  "version": "1.0.0",
+  "description": "Local tool: find and transcript-annotate clip-worthy moments from a YouTube or Google Drive podcast video",
+  "private": true,
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "setup": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nanoid": "^3.3.7"
+  }
+}

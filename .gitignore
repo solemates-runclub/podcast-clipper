@@ -1,0 +1,15 @@
+node_modules/
+pot-provider/
+data/*.db
+data/*.db-*
+sources/*
+!sources/.gitkeep
+tmp/*
+!tmp/.gitkeep
+bin/*
+!bin/.gitkeep
+python/__pycache__/
+python/.venv/
+*.pyc
+.env
+cookies.txt
